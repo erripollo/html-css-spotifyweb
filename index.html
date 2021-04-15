@@ -26,44 +26,45 @@
 
 </head>
 <body>
-   <div class="vh-100 bg-secondary">
+    <div class="viewport vh-100 bg-secondary d-flex flex-column">
 
-        <div class="row m-0 h-75">
+        <div class="row m-0">
 
             <!-- Side Menu -->
-            <div id="side_menu" class="col pl-0 bg_black">
+            <div id="side_menu" class="max_height col px-0 bg_black">
 
                 <aside class="text_grey h-100 d-flex flex-column">
 
                     <!-- logo -->
-                    <div class="logo m-4">
-                        <img src="./assets/img/logo.svg" alt="spotify logo">
+                    <div class="logo m-0 m-sm-4 overflow-auto overflow-hidden">
+                        <img class="logo_lg d-none d-sm-block" src="./assets/img/logo.svg" alt="spotify logo">
+                        <img class="logo_sm d-sm-none my-3" src="./assets/img/logo-small.svg" alt="spotyfy logo small">
                     </div>
                     <!-- /logo -->
 
                     <!-- Top menu -->
-                    <div class="top_menu">
+                    <div class="top_menu overflow-hidden">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <img src="./assets/img/home.svg" alt="home icon">
-                                <div class="text-white">Home</div>
+                                <img class="icon" src="./assets/img/home.svg" alt="home icon">
+                                <div class="title text-white">Home</div>
                             </li>
     
                             <li class="list-group-item">
-                                <img src="./assets/img/search.svg" alt="search icon">
-                                <div>Cerca</div>
+                                <img class="icon" src="./assets/img/search.svg" alt="search icon">
+                                <div class="title">Cerca</div>
                             </li>
     
                             <li class="list-group-item">
-                                <img src="./assets/img/libreria.svg" alt="libreria icon">
-                                <div>La tua libreria</div>
+                                <img class="icon" src="./assets/img/libreria.svg" alt="libreria icon">
+                                <div class="title">La tua libreria</div>
                             </li>
                         </ul>
                     </div>
                     <!-- /Top menu -->
 
                     <!-- Playlist -->
-                    <div class="playlist mt-4">
+                    <div class="playlist mt-4 overflow-auto">
                         <h6 class="text-white text-uppercase pl_aside">Playlist</h6>
                         
                             <div class="add_playlist text_lg pl_aside my-3 d-flex align-items-center">
@@ -103,17 +104,17 @@
                     <!-- /Playlist -->
 
                     <!-- Bottom menu -->
-                    <div class="bottom_menu mt-auto pl_aside">
+                    <div class="bottom_menu mt-auto pl_aside overflow-hidden">
                         <div class="d-flex align-items-center py-2"> 
-                            <img class="mr-2" src="./assets/img/download.svg" alt="download icon">
-                            <div>
+                            <img class="icon m-0 ml-1 mr-sm-2" src="./assets/img/download.svg" alt="download icon">
+                            <div class="title">
                                 Installa app
                             </div>
                         </div>
 
                         <div class="profile my-3 d-flex align-items-center">
-                            <img class="mr-2" src="./assets/img/profile.svg" alt="profile icon">
-                            <div class="text-white text_lg">
+                            <img class="icon m-0 mr-sm-2" src="./assets/img/profile.svg" alt="profile icon">
+                            <div class="title text-white text_lg">
                                 John Doe
                             </div>
                         </div>
@@ -125,7 +126,7 @@
             <!-- Side Menu -->
             
             <!-- Main section -->
-            <div class="col bg-dark">
+            <div class="max_height col bg-dark overflow-auto">
                 <main>
 
                     <!-- Call to action -->
@@ -163,7 +164,7 @@
         </div>
 
         <!-- Footer -->
-        <footer class="h-25 bg-info">
+        <footer class="footer bg-info">
             <div class="row m-0">
 
                 <!-- Cover album -->
@@ -188,6 +189,6 @@
         </footer>
         <!-- /Footer -->
 
-   </div>
+    </div>
 </body>
 </html>
