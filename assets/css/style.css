@@ -17,6 +17,12 @@ h5{
     color: white;
 }
 
+h6{
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: white;
+}
+
 .viewport{
     min-width: 100px;
 }
@@ -40,6 +46,13 @@ h5{
 
 .text_grey{
     color: #6F6F6F;
+}
+.text_lightgrey{
+    color: #878787;
+}
+
+.text_sm{
+    font-size: 0.6rem;
 }
 
 .text_lg{
@@ -171,9 +184,13 @@ h5{
 /*********************
 * Footer
 **********************/
-.footer{
+#footer{
     height: 80px;
     z-index: 1040;
+}
+
+#footer .playback .cover{
+    width: 40px;
 }
 
 
