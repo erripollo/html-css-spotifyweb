@@ -55,6 +55,10 @@ h6{
     font-size: 0.6rem;
 }
 
+.text_md{
+    font-size: 0.9rem;
+}
+
 .text_lg{
     font-size: 1rem;
 }
@@ -191,6 +195,21 @@ h6{
 
 #footer .playback .cover{
     width: 40px;
+}
+
+.btn_play{
+    width: 28px;
+    height: 28px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+
+.time_bar{
+    width: 400px;
+    height: 4px;
+    background-color: #5A5A5A;
+    margin: 1rem;
+    border-radius: 2px;
 }
 
 
