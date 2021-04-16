@@ -212,6 +212,14 @@ h6{
     border-radius: 2px;
 }
 
+.vol_bar{
+    width: 100px;
+    height: 4px;
+    background-color: #5A5A5A;
+    margin: 1rem;
+    border-radius: 2px;
+}
+
 
 
 
