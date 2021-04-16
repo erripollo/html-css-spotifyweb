@@ -140,15 +140,20 @@ h5{
 }
 
 /* Recently played */
-.recently .card{
+.card{
     background-color: transparent;
     border: none;
 }
-.recently .card img{
+.card img{
     border-radius: 0;
 }
-.recently .card .card-body{
+.card .card-body{
     padding: 1.2rem 0;
+}
+
+/* Artisti popolari */
+.popular .card img{
+    border-radius: 50%;
 }
 
 /*********************
