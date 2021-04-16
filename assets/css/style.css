@@ -100,21 +100,13 @@ h6{
     width: 40px;
 }
 
-.list-group-item{
-    background-color: transparent;
-    border: none;
-    padding: 0.4rem 1.25rem;
-    display: flex;
-    align-items: center;
-}
-
 .icon {
     width: 30px;
     margin-right: 0.5rem;
     opacity: 0.8;
 }
 
-.top_menu .list-group > .list-group-item:first-child{
+.top_menu .nav-item:first-child{
     border-left: 3px solid #ADFF2F;
     border-radius: 0;
 }
@@ -203,6 +195,9 @@ h6{
     border: 3px solid white;
     border-radius: 50%;
 }
+.btn_play i{
+    margin-left: 0.1rem;
+}
 
 .time_bar{
     width: 400px;
@@ -236,6 +231,23 @@ h6{
     }
 }
 
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .time_bar{
+        width: 200px;
+        
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+    .time_bar{
+        width: 130px;
+    }
+
+    .vol_bar{
+        width: 50px;
+    }
+}
+
 
 @media screen and (max-width: 575px) {
     #side_menu{
@@ -247,9 +259,8 @@ h6{
         display: none;
     }
 
-    .top_menu .list-group > .list-group-item:first-child{
+    .top_menu .nav-item:first-child{
         border-left: 0;
-        
     }
 
     .playlist{
@@ -285,6 +296,14 @@ h6{
     aside{
         padding: 0;
         align-items: center;
+    }
+
+    .time_bar{
+        width: 100px;
+    }
+
+    .vol_bar{
+        width: 50px;
     }
 
     
