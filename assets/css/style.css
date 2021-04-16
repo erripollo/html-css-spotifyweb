@@ -2,12 +2,19 @@
 body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
 }
 
-h6{
+h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+h5{
     font-size: 1rem;
     font-weight: 700;
+    color: white;
 }
 
 .viewport{
@@ -20,12 +27,24 @@ h6{
     background-color: black;
 }
 
+.bg_blue{
+    background-color: #141922;
+}
+
+.bg_grey{
+    background-color: #282828;
+}
+
 .text_grey{
     color: #6F6F6F;
 }
 
 .text_lg{
     font-size: 1rem;
+}
+
+.px_5{
+    padding: 0 5px;
 }
 
 .pl_aside{
@@ -107,6 +126,30 @@ h6{
     border-radius: 50%;
 }
 
+/*********************
+* Main section
+**********************/
+/* Call to action */
+.cta{
+    opacity: 0.5;
+}
+
+/* Menu */
+.nav .nav-item a{
+    color: #6F6F6F;
+}
+
+/* Recently played */
+.recently .card{
+    background-color: transparent;
+    border: none;
+}
+.recently .card img{
+    border-radius: 0;
+}
+.recently .card .card-body{
+    padding: 1.2rem 0;
+}
 
 /*********************
 * Footer
@@ -121,6 +164,17 @@ h6{
 /*********************
 * Media Query
 **********************/
+@media screen and (max-width: 1199px){
+    h5{
+        font-size: 0.8rem;
+    }
+
+    p{
+        font-size: 0.7rem;
+    }
+}
+
+
 @media screen and (max-width: 575px) {
     #side_menu{
         min-width: 80px;
