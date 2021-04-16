@@ -26,6 +26,9 @@ h5{
 .bg_black{
     background-color: black;
 }
+.bg_black_trasparent{
+    background-color: rgba(0, 0, 0, 0.5);
+}
 
 .bg_blue{
     background-color: #141922;
@@ -70,6 +73,7 @@ h5{
 #side_menu{
     min-width: 250px;
     max-width: 250px;
+    z-index: 1040;
 }
 
 .logo_lg {
@@ -132,14 +136,19 @@ h5{
 /*********************
 * Main section
 **********************/
-/* Call to action */
-.cta{
-    opacity: 0.5;
-}
 
 /* Menu */
 .nav .nav-item a{
     color: #6F6F6F;
+}
+
+.active::after{
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #ADFF2F;
+    margin: 2px auto;
 }
 
 /* Recently played */
@@ -164,6 +173,7 @@ h5{
 **********************/
 .footer{
     height: 80px;
+    z-index: 1040;
 }
 
 
