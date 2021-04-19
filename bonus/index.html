@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <!-- /Font Awesome -->
+
+    <!-- Icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+    <!-- /Icon Bootstrap -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- /Google Fonts -->
+
+    <!-- Bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- /Bootstrap css -->
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- /Style css -->
+
+
+</head>
+
+<body>
+    <div class="viewport vh-100 bg-secondary d-flex flex-column">
+
+        <div class="row m-0">
+
+            <!-- Side Menu -->
+            <div id="side_menu" class="max_height col px-0 pr-sm-4 bg_black">
+
+                <aside class="text_grey h-100 d-flex flex-column overflow-hidden">
+
+                    <!-- logo -->
+                    <div class="logo m-0 m-sm-4">
+                        <img class="logo_lg d-none d-sm-block" src="./assets/img/logo.svg" alt="spotify logo">
+                        <img class="logo_sm d-sm-none my-3" src="./assets/img/logo-small.svg" alt="spotyfy logo small">
+                    </div>
+                    <!-- /logo -->
+
+                    <!-- Top menu -->
+                    <div class="top_menu">
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center" href="#">
+                                    <img class="icon" src="./assets/img/home.svg" alt="home icon">
+                                    <div class="title text-white">Home</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center" href="#">
+                                    <img class="icon" src="./assets/img/search.svg" alt="search icon">
+                                    <div class="title">Cerca</div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link d-flex align-items-center" href="#">
+                                    <img class="icon" src="./assets/img/libreria.svg" alt="libreria icon">
+                                    <div class="title">La tua libreria</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /Top menu -->
+
+                    <!-- Playlist -->
+                    <div class="playlist mt-4 overflow-auto">
+                        <h5 class="text-white text-uppercase pl_aside">Playlist</h5>
+
+                        <div class="add_playlist text_lg pl_aside my-3 d-flex align-items-center">
+                            <div class="square mr-2">
+                                <i class="fas fa-plus"></i>
+                            </div>
+                            <div>
+                                Crea Playlist
+                            </div>
+                        </div>
+
+                        <ul class="nav flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nome Playlist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nome Playlist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nome Playlist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nome Playlist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nome Playlist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nome Playlist</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nome Playlist</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /Playlist -->
+
+                    <!-- Bottom menu -->
+                    <div class="bottom_menu mt-auto pl_aside">
+                        <div class="instal_app d-flex align-items-center py-2">
+                            <img class="icon m-0 ml-1 mr-sm-2" src="./assets/img/download.svg" alt="download icon">
+                            <div class="title">
+                                Installa app
+                            </div>
+                        </div>
+
+                        <div class="profile my-3 d-flex align-items-center">
+                            <img class="icon m-0 mr-sm-2" src="./assets/img/profile.svg" alt="profile icon">
+                            <div class="title text-white text_lg">
+                                John Doe
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /Bottom menu -->
+
+                </aside>
+            </div>
+            <!-- Side Menu -->
+
+            <!-- Main section -->
+            <div class="max_height col px-0 bg_blue overflow-hidden">
+                <main class="h-100 overflow-auto">
+
+                    <!-- Call to action -->
+                    <div
+                        class="cta text-white text-uppercase px-3 py-4 d-flex justify-content-end bg_black_trasparent fixed-top">
+                        <div class="cta_btn px-5 py-2 mr-2 border border-white rounded-pill">
+                            <a class="text-white" href="#">
+                                Effettua upgrade
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /Call to action -->
+
+                    <!-- Menu -->
+                    <ul class="nav justify-content-center text-uppercase mt_100">
+                        <li class="nav-item ">
+                            <a class="nav-link active px-2" href="#">In evidenza</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2" href="#">Podcast</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2" href="#">Classifiche</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2" href="#">Generi e mood</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2" href="#">Nuove uscite</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link px-2" href="#">Scopri</a>
+                        </li>
+                    </ul>
+                    <!-- Menu -->
+
+                    <!-- Recently played section -->
+                    <section class="recently mt-5 px-4 text_grey">
+                        <h2 class="mb-4">Recently played</h2>
+
+                        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 text-center">
+                            <div class="col px_5 mb-1">
+                                <div class="card h-100">
+                                    <div
+                                        class="img_icon positon-relative d-flex justify-content-center align-items-center">
+                                        <img src="./assets/img/metal_lifting.jpg" class="card-img-top" alt="...">
+                                        <i class="play_icon position-absolute text-white far fa-play-circle fa-5x"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Heavy Metal</h5>
+                                        <p class="card-text">Subtitle</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col px_5 mb-1">
+                                <div class="card h-100">
+                                    <div
+                                        class="img_icon positon-relative d-flex justify-content-center align-items-center">
+                                        <img src="./assets/img/stranger.jpeg" class="card-img-top" alt="...">
+                                        <i class="play_icon position-absolute text-white far fa-play-circle fa-5x"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Stranger Things, Vol. 1 (a Netflix Original Series
+                                            Soundtrack)</h5>
+                                        <p class="card-text">Kyle Dixon &amp; Michael Stein</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col px_5 mb-1">
+                                <div class="card h-100">
+                                    <div
+                                        class="img_icon positon-relative d-flex justify-content-center align-items-center">
+                                        <img src="./assets/img/aquietplace.jpeg" class="card-img-top" alt="...">
+                                        <i class="play_icon position-absolute text-white far fa-play-circle fa-5x"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">A quiet place</h5>
+                                        <p class="card-text">Subtitle</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col px_5 mb-1">
+                                <div class="card h-100">
+                                    <div
+                                        class="img_icon positon-relative d-flex justify-content-center align-items-center">
+                                        <img src="./assets/img/split.jpeg" class="card-img-top" alt="...">
+                                        <i class="play_icon position-absolute text-white far fa-play-circle fa-5x"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Split</h5>
+                                        <p class="card-text">Subtitle</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col px_5 mb-1">
+                                <div class="card h-100">
+                                    <div
+                                        class="img_icon positon-relative d-flex justify-content-center align-items-center">
+                                        <img src="./assets/img/cure.jpeg" class="card-img-top" alt="...">
+                                        <i class="play_icon position-absolute text-white far fa-play-circle fa-5x"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">A cure for wellness</h5>
+                                        <p class="card-text">Subtitle</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col px_5 mb-1">
+                                <div class="card h-100">
+                                    <div
+                                        class="img_icon positon-relative d-flex justify-content-center align-items-center">
+                                        <img src="./assets/img/sinister.jpeg" class="card-img-top" alt="...">
+                                        <i class="play_icon position-absolute text-white far fa-play-circle fa-5x"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sinister</h5>
+                                        <p class="card-text">Subtitle</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- /Recently played section -->
+
+                    <!-- Create for.. section -->
+                    <section class="create_for mt-3 px-4 text_grey">
+                        <h2 class="mb-2">Creato per John Doe</h2>
+                        <p class="mb-4">Più ascolti, più accurati saranno i suggerimenti.</p>
+
+                        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 text-center">
+                            <div class="col px_5 mb-1">
+                                <div class="card h-100">
+                                    <div
+                                        class="img_icon positon-relative d-flex justify-content-center align-items-center">
+                                        <img src="./assets/img/radar.jpeg" class="card-img-top" alt="...">
+                                        <i class="play_icon position-absolute text-white far fa-play-circle fa-5x"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Release Radar</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col px_5 mb-1">
+                                <div class="card h-100">
+                                    <div
+                                        class="img_icon positon-relative d-flex justify-content-center align-items-center">
+                                        <img src="./assets/img/mixdaily.jpeg" class="card-img-top" alt="...">
+                                        <i class="play_icon position-absolute text-white far fa-play-circle fa-5x"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Daily Mix 1</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- /Create for.. section -->
+
+                    <!-- Popular section -->
+                    <section class="popular mt-3 px-4 text_grey">
+                        <h2 class="mb-2">Artisti più popolari</h2>
+                        <p class="mb-4">Più ascolti, più accurati saranno i suggerimenti.</p>
+
+                        <div class="row row-cols-2 row-cols-md-4 row-cols-lg-6 text-center">
+                            <div class="col px_5 mb-1">
+                                <div class="card h-100">
+                                    <div
+                                        class="img_icon positon-relative d-flex justify-content-center align-items-center">
+                                        <img src="./assets/img/youg.jpeg" class="card-img-top" alt="...">
+                                        <i class="play_icon position-absolute text-white far fa-play-circle fa-5x"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Lana del Rey</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col px_5 mb-1">
+                                <div class="card h-100">
+                                    <div
+                                        class="img_icon positon-relative d-flex justify-content-center align-items-center">
+                                        <img src="./assets/img/einaudi.jpeg" class="card-img-top" alt="...">
+                                        <i class="play_icon position-absolute text-white far fa-play-circle fa-5x"></i>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ludovico Einaudi</h5>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+                    <!-- /Popular section -->
+
+                </main>
+            </div>
+            <!-- /Main section -->
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" class="bg_grey">
+            <div class="h-100 d-flex align-items-center justify-content-between">
+
+                <!-- Cover album -->
+                <div class="d-flex align-items-center">
+                    <div class="playback text_lightgrey d-flex align-items-center">
+                        <div class="song d-flex align-items-center">
+                            <img src="./assets/img/sinister.jpeg" alt="" class="cover mx-3">
+                            <div class="title">
+                                <h6 class="m-0">Sinister</h6>
+                                <a class="m-0 text_sm text_grey">Brano Nome</a>
+                            </div>
+                        </div>
+                        <div class="favorite text_lg ml-2 ml-md-5">
+                            <i class="far fa-heart mr-2"></i>
+                            <i class="far fa-folder"></i>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- /Cover album -->
+
+                <!-- Music player -->
+                <div class="mx-2 mx-md-3">
+                    <div class="text-white d-flex align-items-center justify-content-center">
+                        <i class="fas fa-random mr-4"></i>
+                        <i class="fas fa-step-backward mr-4"></i>
+                        <i class="play_btn far fa-play-circle fa-2x mr-4"></i>
+                        <i class="fas fa-step-forward mr-4"></i>
+                        <i class="fas fa-redo-alt"></i>
+                    </div>
+                    <div class="text-white text_sm d-flex align-items-center">
+                        <div>0.25</div>
+                        <div class="time_bar ">
+                            <div
+                                class="time w-25 h-100 bg-light rounded-pill d-flex align-items-center justify-content-end">
+                            </div>
+                        </div>
+                        <div>4.35</div>
+                    </div>
+                </div>
+                <!-- /Music player -->
+
+                <!-- Volume -->
+                <div class="text-white d-flex align-items-center">
+                    <i class="bi bi-list-ul mr-3"></i>
+                    <i class="fas fa-desktop mr-3"></i>
+                    <i class="fas fa-volume-up mr-3 mr-sm-0"></i>
+                    <div class="vol_bar">
+                        <div class="vol w-25 h-100 bg-light rounded-pill d-flex align-items-center justify-content-end">
+                        </div>
+                    </div>
+                </div>
+                <!-- /Volume -->
+
+            </div>
+        </footer>
+        <!-- /Footer -->
+
+    </div>
+</body>
+
+</html>
