@@ -105,6 +105,9 @@ h6{
     margin-right: 0.5rem;
     opacity: 0.8;
 }
+.nav-link:hover .icon{
+    opacity: 1;
+}
 
 .top_menu .nav-item:first-child{
     border-left: 3px solid #ADFF2F;
@@ -126,9 +129,21 @@ h6{
     color: black;
     font-size: 1.2rem;
 }
+.add_playlist:hover{
+    color: white;
+    cursor: pointer;
+}
+.add_playlist:hover .square{
+    opacity: 1;
+}
 
 .bottom_menu img{
     width: 15px;
+}
+
+.instal_app:hover{
+    cursor: pointer;
+    color: white;
 }
 
 .bottom_menu div:first-child{
@@ -145,10 +160,20 @@ h6{
 /*********************
 * Main section
 **********************/
+/* Call to action */
+.cta_btn:hover {
+    transform: scale(1.1);
+}
+.cta_btn > a{
+    text-decoration: none;
+}
 
 /* Menu */
 .nav .nav-item a{
     color: #6F6F6F;
+}
+.nav .nav-item a:hover{
+    color: white;
 }
 
 .active::after{
@@ -159,6 +184,7 @@ h6{
     background-color: #ADFF2F;
     margin: 2px auto;
 }
+
 
 /* Recently played */
 .card{
@@ -171,6 +197,27 @@ h6{
 .card .card-body{
     padding: 1.2rem 0;
 }
+
+.img_icon:hover .card-img-top{
+    cursor: pointer;
+    filter: brightness(0.5)
+}
+
+.play_icon{
+    visibility: hidden;
+    opacity: 0;
+}
+.img_icon:hover .play_icon{
+    cursor: pointer;
+    visibility: visible;
+    opacity: 1;
+}
+
+.card-img-top, 
+.play_icon{
+    transition: all 0.3ms;
+}
+
 
 /* Artisti popolari */
 .popular .card img{
@@ -189,16 +236,6 @@ h6{
     width: 40px;
 }
 
-.btn_play{
-    width: 28px;
-    height: 28px;
-    border: 3px solid white;
-    border-radius: 50%;
-}
-.btn_play i{
-    margin-left: 0.1rem;
-}
-
 .time_bar{
     width: 400px;
     height: 4px;
@@ -214,9 +251,6 @@ h6{
     margin: 1rem;
     border-radius: 2px;
 }
-
-
-
 
 /*********************
 * Media Query
