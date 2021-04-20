@@ -334,6 +334,10 @@ h6{
     .vol_bar{
         width: 50px;
     }
+
+    main::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 
@@ -393,6 +397,14 @@ h6{
     .favorite, .vol_bar{
         display: none;
     }
+
+    .cover_album, .volume{
+        display: none!important;
+    }
+    #footer > div{
+        justify-content: center!important;
+    }
+
 
     
 }
