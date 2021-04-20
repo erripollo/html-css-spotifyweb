@@ -398,14 +398,20 @@ h6{
         display: none;
     }
 
-    .cover_album, .volume{
-        display: none!important;
+    .cover_album .playback div:last-child, 
+    .cover_album .title{
+        display: none;
     }
-    #footer > div{
-        justify-content: center!important;
+   
+    .volume i{
+        display: none;
     }
 
+    .volume i:nth-child(3){
+        display: block;
+        transform: scale(2);
 
+    }
     
 }
 
